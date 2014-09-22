@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 import datetime
 
 
@@ -8,8 +9,7 @@ def olaMundo(request):
 
 def dataAtual(request):
     now = datetime.datetime.now()
-    html = "<em>Agora é %s.</em>" % now
-    return HttpResponse(html)
+    return render(request, 'data_atual.html', {'data_atual': now})
 
 
 def dataMais(request, offset):
