@@ -9,7 +9,7 @@ def olaMundo(request):
 
 def dataAtual(request):
     now = datetime.datetime.now()
-    return render(request, 'data_atual.html', {'data_atual': now})
+    return render(request, 'data/data_atual.html', {'data_atual': now})
 
 
 def dataMais(request, offset):

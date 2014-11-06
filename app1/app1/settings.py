@@ -82,5 +82,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    '/Users/tvobrachini/Projects/treinaweb/app1/templates',
+    '/home/tvobrachini/Projects/treinaweb/app1/templates',
 )
